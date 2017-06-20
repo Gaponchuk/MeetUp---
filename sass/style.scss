@@ -1,10 +1,16 @@
-$color: #fadfaa;
-
-body {
-  background-color: $color;
-}
-
-h1 {
-  color: $color;
-  font-size: 18px;
-}
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "common";
+@import "header-top";
+@import "header-top-menu";
+@import "countdown";
+@import "header-bottom";
+@import "welcome";
+@import "authorize";
+@import "signup-form";
+@import "speakers";
+@import "speakers-catalogue";
+@import "speakers-item";
+@import "events";
+@import "events-list";

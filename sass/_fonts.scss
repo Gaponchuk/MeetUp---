@@ -3,53 +3,56 @@
   font-family: Roboto;
   src: url("../fonts/Roboto/Thin/Roboto-Thin.woff2?v=2.137") format("woff2"), url("../fonts/Roboto/Thin/Roboto-Thin.woff?v=2.137") format("woff");
   font-weight: 100;
-  font-style: normal; }
+  font-style: normal;
+ }
 
 @font-face {
   font-family: Roboto;
   src: url("../fonts/Roboto/Light/Roboto-Light.woff2?v=2.137") format("woff2"), url("../fonts/Roboto/Light/Roboto-Light.woff?v=2.137") format("woff");
   font-weight: 300;
-  font-style: normal; }
+  font-style: normal;
+}
 
 @font-face {
   font-family: Roboto;
   src: url("../fonts/Roboto/Regular/Roboto-Regular.woff2?v=2.137") format("woff2"), url("../fonts/Roboto/Regular/Roboto-Regular.woff?v=2.137") format("woff");
   font-weight: 400;
-  font-style: normal; }
+  font-style: normal;
+}
 
 @font-face {
   font-family: Roboto;
   src: url("../fonts/Roboto/Medium/Roboto-Medium.woff2?v=2.137") format("woff2"), url("../fonts/Roboto/Medium/Roboto-Medium.woff?v=2.137") format("woff");
   font-weight: 500;
-  font-style: normal; }
+  font-style: normal;
+}
 
 @font-face {
   font-family: Roboto;
   src: url("../fonts/Roboto/Bold/Roboto-Bold.woff2?v=2.137") format("woff2"), url("../fonts/Roboto/Bold/Roboto-Bold.woff?v=2.137") format("woff");
   font-weight: 700;
-  font-style: normal; }
+  font-style: normal;
+}
 
 @font-face {
   font-family: Roboto;
   src: url("../fonts/Roboto/Black/Roboto-Black.woff2?v=2.137") format("woff2"), url("../fonts/Roboto/Black/Roboto-Black.woff?v=2.137") format("woff");
   font-weight: 900;
-  font-style: normal; }
+  font-style: normal;
+}
 
 /* Roboto Slab */
+
 @font-face {
   font-family: 'Roboto Slab';
   src: url("../fonts/Roboto Slab/Thin/RobotoSlab-Thin.woff2?v=1.0.0") format("woff2"), url("../fonts/Roboto Slab/Thin/RobotoSlab-Thin.woff?v=1.0.0") format("woff"), url("../fonts/Roboto Slab/Thin/RobotoSlab-Thin.ttf?v=1.0.0") format("truetype");
   font-weight: 100;
-  font-style: normal; }
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'Roboto Slab';
   src: url("../fonts/Roboto Slab/Regular/RobotoSlab-Regular.woff2?v=1.0.0") format("woff2"), url("../fonts/Roboto Slab/Regular/RobotoSlab-Regular.woff?v=1.0.0") format("woff"), url("../fonts/Roboto Slab/Regular/RobotoSlab-Regular.ttf?v=1.0.0") format("truetype");
   font-weight: 400;
-  font-style: normal; }
-
-body {
-  font-size: 1em;
-  font-family: "Roboto", Arial, sans-serif;
-  color: #242424;
-  margin: 0 auto; }
+  font-style: normal;
+}
