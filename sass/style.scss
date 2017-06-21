@@ -8,7 +8,8 @@ h1 {
   color: $color;
   font-size: 18px;
 }
-=======
+
+
 @import "variables";
 @import "mixins";
 @import "fonts";
@@ -25,4 +26,15 @@ h1 {
 @import "speakers-item";
 @import "events";
 @import "events-list";
-
+@import "advantages-item";
+@import "advantages";
+@import "program";
+@import "program-table";
+@import "program-description";
+@import "sponsor";
+@import "sponsor-list";
+@import "map";
+@import "communication-address";
+@import "communication-form";
+@import "footer-page";
+@import "footer-social";
