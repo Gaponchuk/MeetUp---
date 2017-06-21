@@ -1,12 +1,203 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MeetUp</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <h1>Meet Up</h1>
   <p>Сегодня 11 июня. Первый раз настроил локальный хост)</p>
+=======
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>MeetUp</title>
+</head>
+<body>
+<header class="header-content">
+  <div class="header-top">
+    <div class="header-top__logo">
+      <img src="img/logo.png" alt="Logo">
+      <span class="header-top__area">Bangladesh</span>
+    </div>
+    <nav class="header-top-menu">
+      <ul class="header-top-menu__list">
+        <li class="header-top-menu__item"><a class="header-top-menu__link" href="#">Event details</a></li>
+        <li class="header-top-menu__item"><a class="header-top-menu__link" href="#">Speakers</a></li>
+        <li class="header-top-menu__item"><a class="header-top-menu__link" href="#">Sponsors</a></li>
+        <li class="header-top-menu__item"><a class="header-top-menu__link" href="#">Past events</a></li>
+        <li class="header-top-menu__item"><a class="header-top-menu__link" href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="countdown"></div>
+  <div class="header-bottom">
+    <div class="welcome">
+      <h2 class="welcome__title">Welcome!</h2>
+      <p class="welcome__content">The biggest envato community meetup in Bangladesh is happening right now! And you can be a part of it too...</p>
+      <p class="welcome__content">Get together with members of the Envato community to talk shop, trade war stories, make new friends and see the faces behind the avatars. Whether you’re an author on Envato Market, a client on Envato Studio, or a learner on Tuts+, you are invited!</p>
+      <p class="welcome__content">It doesn’t matter as long as you have the motivation and interest to work at the envato and bring cookies to our event. Just kidding, but we don’t mind having more cookies! ;)Head over and fill up the sign up form here so that we can keep track of our guests. Don’t forget to register on our nvite page here too!</p>
+    </div>
+    <div class="authorize">
+    <form action="#" method ="post" class="signup-form">
+      <input type="text" class="signup-form__field" placeholder="Enter your name">
+      <input type="email" class="signup-form__field" placeholder="Enter your email">
+      <input type="phone" class="signup-form__field" placeholder="Phone number">
+      <input type="text" class="signup-form__field" placeholder="Envato Username">
+      <button type="submit" class="btn signup-form__btn">Let me in!</button>
+      <p class="signup-form__note">Hurry up, Limited seats availble
+*we will never spam your email</p>
+    </form>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="advantages">
+    <div class="advantages-item advantages-item--item1">
+      <div class="advantages-item__title"></div>
+      <div class="advantages-item__text"></div>
+    </div>
+    <div class="advantages-item advantages-item--item2">
+      <div class="advantages-item__title"></div>
+      <div class="advantages-item__text"></div>
+    </div>
+    <div class="advantages-item advantages-item--item3">
+      <div class="advantages-item__title"></div>
+      <div class="advantages-item__text"></div>
+    </div>
+  </section>
+  <section class="program">
+    <table class="program-table">
+      <tr class="program-table__title">
+        <th>Time</th>
+        <th colspan="2">Stuff that will happen</th>
+      </tr>
+      <tr class="program-table__row">
+        <td>10am - 12pm</td>
+        <td>Introduction and presentations about Envato</td>
+        <td>+</td>
+      </tr>
+      <tr class="program-table__row program-table__description">
+        <td colspan="3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, at?</td>
+      </tr>
+      <tr class="program-table__row">
+        <td>12pm - 02pm</td>
+        <td>Sessions by honorable guests and Speakers</td>
+        <td>+</td>
+      </tr>
+      <tr class="program-table__row program-table__description">
+        <td colspan="3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, ex.</td>
+      </tr>
+      <tr class="program-table__row">
+        <td>02pm - 03pm</td>
+        <td>Break and Mingle time with the authors</td>
+        <td>+</td>
+      </tr>
+      <tr class="program-table__row program-table__description">
+        <td colspan="3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, pariatur!</td>
+      </tr>
+      <tr class="program-table__row">
+        <td>03pm - 05pm</td>
+        <td>Portfolio Review, Rewards and Ending Presentation</td>
+        <td>+</td>
+      </tr>
+      <tr class="program-table__row program-table__description">
+        <td colspan="3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, aliquam?</td>
+      </tr>
+    </table>
+    <div class="program-description">
+      <p>Please keep in mind that the timings may differ according to the flow of the event. The even is actually day long and we do plan to finish it within our set time but it doesn’t have to be, if we all agree to hangour for some time more, what harm could it do? :)</p>
+    </div>
+  </section>
+  <section class="reward">
+    <div class="reward__icon">
+      <span class="reward__label">Envato Elite</span>
+    </div>
+    <h2 class="reward__title">We reward the Elites!</h2>
+    <div class="reward__desc">
+      <p>Are you an Elite author in the Envato Marketplaces? If so we are proud of you! We want to give our thanks in achieving great success in the marketplace and we want to make known to the people of our country that you are amazing! Our Elite gifting program includes giving you special merchandize from our community and also promote your works in our community.</p>
+      <p>All you have to do is contact us by clicking the button here and then its just going to the event, saying something motivational and taking that swag while looking amazing infront of thousands of other community members.</p>
+      <p>*Be advised, we will only give you Elite thank you swag for each level of elite you cross.That means if you do not cross to the next elite level before the next event, you cannot claim your prizes.</p>
+    </div>
+    <a href="#" class="btn reward__link">Bring on the swag!</a>
+  </section>
+  <section class="speakers">
+    <h2 class="speakers__title">Speakers</h2>
+    <p class="speakers__promo">Meet our Valuable speakers who will be each giving 10 minutes sessions on different subjects regarding being a digital product author, working at envato and marketing your business.Hope you will have a great time listening to our presentations!</p>
+    <div class="speakers__box speakers-catalogue">
+      <article class="speakers-item speakers-item--item1"></article>
+      <article class="speakers-item speakers-item--item2">
+        <h3 class="speakers-item__name">Shahriyer<br />
+Shuvo</h3>
+        <p class="speakers-item__desc">
+          <a href="#">More about selling in the
+Envato Marketplaces</a>
+        </p>
+        <div class="speakers-item__social social-box">
+          <a href="#" class="social-box__link social-box__link--fb">facebook</a>
+          <a href="#" class="social-box__link social-box__link--tw">twitter</a>
+          <a href="#" class="social-box__link social-box__link--be">behance</a>
+          <a href="#" class="social-box__link social-box__link--db">dribbble</a>
+        </div>
+      </article>
+      <article class="speakers-item speakers-item--item3"></article>
+      <article class="speakers-item speakers-item--item4"></article>
+      <div class="speakers-item speakers-item--picture"></div>
+      <article class="speakers-item speakers-item--item5"></article>
+      <article class="speakers-item speakers-item--item6"></article>
+      <article class="speakers-item speakers-item--item7"></article>
+      <article class="speakers-item speakers-item--item8"></article>
+    </div>
+  </section>
+  <section class="sponsor">
+    <h2 class="sponsor__title">Sponsor our event!</h2>
+    <p class="sponsor__text">If you want to help us making this event lively and successful, help us by sponsoring our event!This will help us bring in more people, have better livestreaming equipment, maybe even our own chef!You can also sponsor us by giving away free swag at the event!</p>
+    <div class="sponsor-list">
+      <h3 class="sponsor-list__title">Here’s who have sponsored us already:</h3>
+      <div class="sponsor-list__item sponsor-list__item-sponsor1"></div>
+      <div class="sponsor-list__item sponsor-list__item-sponsor2"></div>
+      <div class="sponsor-list__item sponsor-list__item-sponsor3"></div>
+    </div>
+    <a href="#" class="btn sponsor__become">Sponsor us</a>
+  </section>
+  <section class="events">
+    <h2 class="events__title">Past Events</h2>
+    <p class="events__text">Check out the photos of our previous events where we rocked with a lot of Famous and enthusiatic authors! We’re always planning to make our future events feel fresh and fun to be at. :)</p>
+    <div class="events-list">
+      <div class="events-list__item events-list__item--event1"></div>
+      <div class="events-list__item events-list__item--event2"></div>
+      <div class="events-list__item events-list__item--event3"></div>
+      <div class="events-list__item events-list__item--event14"></div>
+    </div>
+    <a href="#" class="btn events__more">View More</a>
+  </section>
+  <section class="map">
+    <div class="map-container"></div>
+    <div class="communication">
+      <div class="communication-address">
+        <p class="communication-address__text"></p>
+        <a href="#" class="btn communication-address__btn"></a>
+      </div>
+      <div class="communication-form">
+        <form action="" method="" class="send-message">
+          <input type="email" class="send-message__field" placeholder="Enter your email">
+          <textarea name="message" id="#message" class="send-message__field" placeholder="Type ypur message" cols="30" rows="10"></textarea>
+          <button type="submit" class="btn send-message">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer-page">
+  <div class="footer-social">
+    <a href="https://www.facebook.com" class="footer-social__link footer-social__link--fb">facebook</a>
+    <a href="https://www.twitter.com" class="footer-social__link footer-social__link--tw">twitter</a>
+    <a href="https://www.instagram.com" class="footer-social__link footer-social__link--in">instagram</a>
+    <a href="https://www.google.com" class="footer-social__link footer-social__link--gg">google</a>
+    <a href="#" class="footer-social__link footer-social__link--t">wtf-t</a>
+  </div>
+  <p class="footer-page__text">Hope we see you at the event!<br>All Rights Reserved. Envato Bangladesh &copy; 2015</p>
+  <a href="#" class="btn footer-page--up">UP</a>
+</footer>
 </body>
 </html>
