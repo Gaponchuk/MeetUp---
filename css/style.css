@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 body {
   background-color: #f89a04; }
 
 h1 {
   color: #f89a04;
   font-size: 18px; }
-=======
+
 /* Roboto */
 @font-face {
   font-family: Roboto;
@@ -61,4 +60,45 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   color: #242424;
   margin: 0 auto; }
->>>>>>> 3833c3854df2333d07504cd481aba238d30a57bd
+
+.advantages-item {
+  max-width: 302px;
+  margin-right: 55px;
+  margin-bottom: 15px;
+  position: relative;
+  padding-top: 240px;
+  text-align: center; }
+  .advantages-item__title {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin: 0; }
+  .advantages-item__text {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 0; }
+  .advantages-item:before {
+    position: absolute;
+    content: "";
+    width: 201px;
+    height: 215px;
+    top: 0;
+    left: 40px;
+    background-repeat: no-repeat; }
+  .advantages-item--item1:before {
+    background-image: url(../img/bg-community.png); }
+  .advantages-item--item2:before {
+    background-image: url(../img/bg-talk_shop.png); }
+  .advantages-item--item3:before {
+    background-image: url(../img/bg-war_stories.png); }
+
+.advantages {
+  max-width: 1170px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-left: 70px;
+  outline: 1px dashed red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
