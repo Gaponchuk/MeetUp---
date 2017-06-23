@@ -1,0 +1,15 @@
+@mixin container {
+  width: 1170px;
+  padding: 0 70px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  outline: 1px dashed red;
+}
+
+@mixin wrapper {
+  max-width: 1170px; 
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-left: 70px;
+  outline: 1px dashed red;
+}
