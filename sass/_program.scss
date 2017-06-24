@@ -1,0 +1,19 @@
+ .program {
+  @include wrapper;
+  padding: 0 5.982905982906%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  h2 {
+    overflow: hidden;
+  }
+  
+  &__description {
+    max-width: 835px;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 37px;
+  }
+}

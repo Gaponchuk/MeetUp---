@@ -1,0 +1,92 @@
+.program-table {
+  display: table;
+  width: 100%;
+  border-radius: 15px;
+  border-collapse: collapse;
+  
+  &__title {
+    font-size: 30px;
+    color: $white;
+    
+    th {
+      background-color: #a3cc40;
+      padding: 20px;
+          
+      &:nth-child(2) {
+        text-align: left;
+      }
+      
+      @media screen and (max-width: 960px) {
+        padding: 10px;
+        font-size: 26px;
+      }
+    }
+  }
+  
+  &__row {
+    color: #fff;
+    background-color: #373737;
+        
+    &:nth-child(4n) {
+      background-color: #4b4d4f;
+    }
+    
+    td {
+      max-width: 600px;
+      font-size: 22px;
+      padding: 19px 20px;
+      
+      @media screen and (max-width: 960px) {
+        font-size: 16px;
+        padding: 10px 5px;
+      }
+    }
+    
+    &:hover {
+      cursor: pointer;
+      background-color: darken( #373737, 10%);
+    }
+  }
+  
+  &__program {
+    text-align: left;
+  }
+  
+  &__plus {
+    
+    button {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: #fff;
+      border-style: none;
+      cursor: pointer;
+      position: relative;
+      
+      &::before, 
+      &::after {
+        position: absolute;
+        content: "";
+        width: 16px;
+        height: 4px;
+        top: 16px;
+        left: 10px;
+        background-color: #4b4d4f;
+      }
+      
+      &::after {
+        transform: rotate(90deg);
+      }
+    }
+  }
+  
+  &__description {
+    background-color: #7f8080;
+    color: $white;
+    display: none;
+    
+    td {
+      padding: 15px;
+    }
+  }
+}
