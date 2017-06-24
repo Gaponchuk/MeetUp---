@@ -10,6 +10,14 @@
   max-width: 1170px; 
   box-sizing: border-box;
   margin: 0 auto;
-  padding-left: 70px;
   outline: 1px dashed red;
+}
+
+@mixin btn-green {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fff;
+  border-radius: 15px;
+  padding-top: 17px;
+  padding-bottom: 15px;
 }
