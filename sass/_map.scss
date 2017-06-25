@@ -1,7 +1,25 @@
 .map {
 
+  
+  &__container {
+    z-index: 3;
+    @include wrapper;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/map.jpg");
+  }
+
 }
 
 .communication {
-
+  width: 970px;
+  margin-top: 65px;
+  margin-bottom: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  z-index: 5;
 }

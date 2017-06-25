@@ -1,0 +1,43 @@
+.communication-form {
+  max-width: 400px;
+}
+
+.send-message {
+  margin-top: 58px;
+  margin-bottom: 58px;
+  
+  &__field {
+    font-weight: lighter;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+    outline-style: none;
+    margin-bottom: 26px;
+    padding: 20px;
+    color: #6c6c6c;
+    resize: none;
+    
+    &:focus {
+      border: 1px solid $bg-color-btn;
+    }
+    
+    &::placeholder {
+      color: #bebebe;
+    }
+  }
+  
+  &__btn {
+    @include btn-green;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #373737;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: darken(#373737, 5%);
+    }
+  }
+}

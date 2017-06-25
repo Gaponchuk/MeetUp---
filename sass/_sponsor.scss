@@ -14,7 +14,7 @@
   
   &__text {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: lighter;
     color: $white;
     text-align: center;
     max-width: 630px;
@@ -28,6 +28,7 @@
     background-color: #90d23d;
     padding-left: 44px;
     padding-right: 44px;
+    margin-bottom: 20px;
     
     &:hover {
       background-color: darken(#90d23d, 5%);

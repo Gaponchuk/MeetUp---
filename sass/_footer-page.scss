@@ -1,17 +1,37 @@
 .footer-page {
   @include wrapper;
-  min-height: 220px;
+  position: relative;
   background-color: #90d23d;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
   
   &__text {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: lighter;
     color: $white;
+    margin-top: 30px;
+    margin-bottom: 45px;
+  }
+  
+  &--up {
+    position: absolute;
+    right: 30px;
+    top: 85px;
+    
+    @media screen and (max-width: 480px) {
+      position: absolute;
+      top: 215px;
+      right: 30px;
+    }
   }
   
   .btn {
-  position: relative;
+    width: 30px;
+    height: 21px;
+    
   
   &::before,
   &::after {
@@ -19,7 +39,6 @@
     content: "";
     width: 21px;
     height: 5px;
-    left: 15px;
     background-color: #212121;
     transform: rotate(45deg);
   }

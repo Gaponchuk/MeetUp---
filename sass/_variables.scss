@@ -3,6 +3,7 @@ $header-font: "Roboto Slab", "Times New Roman", serif;
 $body-color: #242424;
 $white: #fff;
 $browser-context: 16;
+$bg-color-btn: #90d23d;
 
 @function em($pixels, $context: $browser-context) {
   @return $pixels / $context * 1em;
