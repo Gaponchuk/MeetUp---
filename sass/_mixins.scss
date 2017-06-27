@@ -1,6 +1,6 @@
 
 @mixin wrapper {
-  max-width: 1170px; 
+  max-width: 1170px;
   box-sizing: border-box;
   margin: 0 auto;
   outline: 1px dashed red;
@@ -52,26 +52,26 @@
     }
 }
 
-@mixin angles($direction-top: false, $direction-btm: false) {
+@mixin angles($direction-top: false, $direction-btm: false, $angle-bg: $white) {
   position: relative;
   &::after,
   &::before {
     content: '';
-    position: absolute;
-    background-color: #574f4f;
+    background-color: $angle-bg;
     width: 100%;
     height: 100%;
-    z-index: -1;
     transform: skewY( - $angle);
   }
   @if $direction-top {
     &::before {
+      position: absolute;
       top: 0;
       transform-origin: top right;
     }
   }
   @if $direction-btm {
     &::after {
+      position: absolute;
       bottom: 0;
       transform-origin: bottom left;
     }
@@ -83,4 +83,3 @@
   margin: 0;
   padding: 0;
 }
-
