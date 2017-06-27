@@ -1,20 +1,3 @@
-$color: #f89a04;
-
-body {
-  background-color: $color;
-}
-
-h1 {
-  color: $color;
-  font-size: 18px;
-}
-
-.communication {
-  position: absolute;
-}
-
-
-
 @import "variables";
 @import "mixins";
 @import "fonts";
