@@ -1,0 +1,12 @@
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  &__sticker {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    transform: rotate(1deg) translateY(-108px);
+  }
+}

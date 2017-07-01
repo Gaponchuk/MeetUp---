@@ -4,3 +4,19 @@ body {
   color: $body-color;
   margin: 0 auto;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  text-decoration: none;
+  display: block;
+  border: none;
+  box-shadow: none;
+}
+
+.container {
+  @include container;
+}

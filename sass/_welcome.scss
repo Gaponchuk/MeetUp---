@@ -1,0 +1,28 @@
+.welcome {
+outline: 1px solid black;
+flex-basis:51.5%;
+margin-top: auto;
+	&__title {
+    color: $body-color;
+    font-family: $body-font;
+    font-size: em(50);
+    font-weight: 900;
+		margin-top: 70px;
+		margin-bottom: 10px;
+	}
+
+	&__content {
+    color: $body-color;
+    font-family: $body-font;
+    font-size: em(14);
+    font-weight: 300;
+    margin-bottom: 15px;
+     &:last-child {
+       margin-bottom: 0;
+     }
+    b {
+      font-weight: 500;
+    }
+	}
+
+}
