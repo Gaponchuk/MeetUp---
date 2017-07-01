@@ -1,0 +1,35 @@
+.header-top {
+  display: flex;
+  align-items: center;
+  @include desktop {
+  padding-top: 45px;
+  }
+  @include tablet {
+   padding-top: 20px;
+  }
+  @include mobile {
+   padding-top: 10px;
+  }
+	&__logo {
+  max-width: 230px;
+  height: 62px;
+  position: relative;
+	}
+
+	&__area {
+    color: #82b541;
+    font-family: $header-font;
+    font-size: em(18);
+    font-weight: 400;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    @include mobile {
+      font-size: 2vw;
+    }
+	}
+
+}
