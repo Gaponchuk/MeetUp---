@@ -1,9 +1,38 @@
-.sponsor {
-  @include wrapper;
+ .sponsor {
+//  @include wrapper;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #4b4d4f;
+//  background-color: #4b4d4f;
+   
+  position: relative;
+  background: linear-gradient(to right, #4b4d4f 0%, #4b4d4f 100%);
+  margin-top: 5.255670103093%;
+  margin-bottom: 5.255670103093%;
+  
+  &::before,
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    transition: ease all .5s;
+   }
+   
+  &::before {
+    top: 0;
+    transform-origin: left top;
+    transform: skewY(-3deg);
+  }
+  
+  &::after {
+    bottom: 0;
+    transform-origin: bottom right;
+    transform: skewY(-3deg);
+   }
+   
   
   &__title {
     text-align: center;
