@@ -437,7 +437,9 @@ img {
 .map {
   z-index: 5;
   min-height: 660px;
-  width: 100%; }
+  width: 100%;
+  height: 100%;
+  position: relative; }
   .map__container {
     max-width: 1170px;
     box-sizing: border-box;
@@ -447,6 +449,10 @@ img {
     justify-content: center;
     align-items: center;
     background-image: url("../img/map.jpg"); }
+  .map-inform {
+    position: absolute;
+    height: 100%;
+    width: 100%; }
 
 .communication {
   width: 970px;
