@@ -1,8 +1,9 @@
-.map {
-
+ .map {
+    z-index: 5;
+		min-height: 660px;
+    width: 100%;
   
   &__container {
-    z-index: 3;
     @include wrapper;
     display: flex;
     justify-content: center;

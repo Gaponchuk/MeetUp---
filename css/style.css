@@ -348,7 +348,8 @@ img {
     background-color: #fff;
     border-style: none;
     cursor: pointer;
-    position: relative; }
+    position: relative;
+    outline-style: none; }
     .program-table__plus button::before, .program-table__plus button::after {
       position: absolute;
       content: "";
@@ -361,20 +362,35 @@ img {
       transform: rotate(90deg); }
   .program-table__description {
     background-color: #7f8080;
-    color: #fff;
-    display: none; }
+    display: none;
+    transition: height 0.2s ease-out; }
     .program-table__description td {
       padding: 15px; }
 
 .sponsor {
-  max-width: 1170px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  outline: 1px dashed red;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #4b4d4f; }
+  position: relative;
+  background: linear-gradient(to right, #4b4d4f 0%, #4b4d4f 100%);
+  margin-top: 5.255670103093%;
+  margin-bottom: 5.255670103093%; }
+  .sponsor::before, .sponsor::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    transition: ease all .5s; }
+  .sponsor::before {
+    top: 0;
+    transform-origin: left top;
+    transform: skewY(-3deg); }
+  .sponsor::after {
+    bottom: 0;
+    transform-origin: bottom right;
+    transform: skewY(-3deg); }
   .sponsor__title {
     text-align: center;
     font-size: 50px;
@@ -418,16 +434,19 @@ img {
   .sponsor-list__item {
     margin-bottom: 65px; }
 
-.map__container {
-  z-index: 3;
-  max-width: 1170px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  outline: 1px dashed red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../img/map.jpg"); }
+.map {
+  z-index: 5;
+  min-height: 660px;
+  width: 100%; }
+  .map__container {
+    max-width: 1170px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    outline: 1px dashed red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/map.jpg"); }
 
 .communication {
   width: 970px;
@@ -507,15 +526,12 @@ img {
     border-radius: 5px;
     border-style: none;
     background-color: #373737;
-    cursor: pointer; }
+    cursor: pointer;
+    color: #fff; }
     .send-message__btn:hover {
       background-color: #2a2a2a; }
 
 .footer-page {
-  max-width: 1170px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  outline: 1px dashed red;
   position: relative;
   background-color: #90d23d;
   display: flex;
