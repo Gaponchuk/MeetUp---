@@ -2,6 +2,7 @@ $body-font:  "Roboto", Arial, sans-serif;
 $header-font: "Roboto Slab", "Times New Roman", serif;
 $body-color: #242424;
 $signup-color: #90d23d;
+$grey-bg: #4b4d4f;
 $white: #fff;
 $browser-context: 16;
 $angle: 4deg;
@@ -11,4 +12,8 @@ $desktop: 1170px;
 
 @function em($pixels, $context: $browser-context) {
   @return $pixels / $context * 1em;
+}
+
+@function vw($pixels) {
+  @return ($pixels/(1170 * .01)) * 1vw;
 }
