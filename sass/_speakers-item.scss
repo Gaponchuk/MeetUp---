@@ -1,0 +1,79 @@
+.speakers-item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  background-color: $signup-color;
+  align-items: stretch;
+  width: 296px;
+  min-height: 296px;
+  box-sizing: border-box;
+  padding: 33px;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  @include desktop {
+    &:not(:nth-child(3n)) {
+    margin-right: 10px;
+  }
+  }
+  @include tablet {
+    width: 45%;
+    &:not(:nth-of-type(2n)) {
+      margin-right: 15px;
+  }
+}
+  @include mobile {
+    width: 90%;
+  }
+	&__name {
+    color: #fefefe;
+    font-family: $body-font;
+    font-size: em(25);
+    font-weight: 900;
+    margin: 0;
+    line-height: .9;
+    position: relative;
+    @include desktop {
+      font-size: em(45);
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 33%;
+      height: 5px;
+      background-color: $white;
+    }
+	}
+
+	&__desc {
+    color: #fefefe;
+    font-family: $body-font;
+    font-size: em(18);
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+	}
+  &__social {
+    margin-top: auto;
+  }
+
+
+  &--item2 {
+    background: url("../img/pattern.png");
+  }
+
+  &--picture {
+    background: transparent url("../img/speaker-badge.png") no-repeat 50% 50%;
+    display: none;
+    @include desktop {
+      display: block;
+    }
+  }
+
+}

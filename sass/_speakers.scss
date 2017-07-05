@@ -1,1 +1,35 @@
+.speakers {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 180px;
 
+	&__title {
+    color: $body-color;
+    font-family: $body-font;
+    font-size: em(50);
+    font-weight: 900;
+    margin-left: 30px;
+    margin-top: 230px;
+    margin-bottom: 10px;
+    @include tablet {
+      margin-top: 150px;
+    }
+    @include mobile {
+      margin-top: 75px;
+    }
+	}
+
+	&__promo {
+    color: $body-color;
+    font-family: $body-font;
+    font-size: em(14);
+    font-weight: 300;
+    margin-left: 30px;
+    margin-bottom: 60px;
+    @include desktop {
+      max-width: 56%;
+    }
+	}
+
+}

@@ -1,0 +1,13 @@
+.speakers-catalogue {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 30px;
+  @include tablet {
+    justify-content: center;
+  }
+  @include mobile {
+    flex-direction: column;
+    align-content: center;
+  }
+}
