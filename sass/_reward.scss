@@ -1,0 +1,71 @@
+.reward {
+  @include angles($direction-top: true, $direction-btm: true, $angle-bg: $grey-bg, $z-index: -1);
+  margin-top: 250px;
+  @include tablet {
+    margin-top: 200px;
+  }
+  @include mobile {
+    margin-top: 100px;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    text-align: right;
+    &::before {
+      content: '';
+      width: 30%;
+      height: 74%;
+      position: absolute;
+      top: -40%;
+      left: 6%;
+      background: url("../img/elite-badge.png") no-repeat 50% 50%;
+      background-size: contain;
+      @include mobile {
+        content: none;
+      }
+    }
+  }
+  &__article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto;
+    @include desktop {
+    flex-basis: 64.5%;
+    }
+  }
+	&__title {
+    color: $white;
+    font-family: $body-font;
+    font-size: em(50);
+    font-weight: 900;
+    margin-top: 65px;
+    margin-bottom: 20px;
+	}
+
+	&__desc p {
+    color: $white;
+    font-family: $body-font;
+    font-size: em(14);
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+	}
+
+	&__link {
+    border-radius: 15px;
+    background-color: $signup-color;
+    color: $white;
+    font-family: $body-font;
+    font-size: em(18);
+    font-weight: 400;
+    padding: 18px 25px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+	}
+
+}
