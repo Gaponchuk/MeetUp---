@@ -1,12 +1,10 @@
 .header-bottom {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  z-index: 1;
   position: relative;
-
-  &__sticker {
-    position: absolute;
-    top: 0;
-    left: 10px;
-    transform: rotate(1deg) translateY(-108px);
+  @include desktop {
+    flex-direction: row;
   }
 }

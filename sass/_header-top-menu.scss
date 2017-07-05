@@ -1,12 +1,34 @@
 .header-top-menu {
-  width: 53.4%;
-  margin-left: auto;
+  margin-left: 0;
+  width: auto;
+  @include desktop {
+    width: 53.4%;
+    margin-left: auto;
+  }
+  @include tablet {
+    margin-top: 40px;
+    width: 100%;
+  }
+  @include mobile {
+    margin-top: 20px;
+    outline: 1px solid red;
+  }
 	&__list {
   @include no-list;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  @include mobile {
+    flex-direction: column;
+    text-align: center;
+  }
 	}
-
+  &__item:not(:last-child) {
+    margin-right: 10px;
+    @include mobile {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
 	&__link {
   color: $white;
   font-family: $body-font;
@@ -14,12 +36,15 @@
   font-weight: 100;
   text-transform: uppercase;
   text-decoration: none;
+  white-space: nowrap;
      &:hover {
-      text-shadow: 0px 0px 5px #000;
+      outline: 2px solid $signup-color;
+      outline-offset: 5px;
      }
      &:active {
        text-decoration: underline;
-       text-decoration-color: #90d23d;
+       outline: none;
+       text-decoration-color: $signup-color;
      }
 	}
 

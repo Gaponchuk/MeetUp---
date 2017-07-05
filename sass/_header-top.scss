@@ -1,8 +1,10 @@
 .header-top {
   display: flex;
   align-items: center;
+  flex-direction: column;
   @include desktop {
   padding-top: 45px;
+  flex-direction: row;
   }
   @include tablet {
    padding-top: 20px;
@@ -12,8 +14,9 @@
   }
 	&__logo {
   max-width: 230px;
-  height: 62px;
+  max-height: 62px;
   position: relative;
+  align-self: center;
 	}
 
 	&__area {
@@ -26,10 +29,6 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    text-align: center;
-    @include mobile {
-      font-size: 2vw;
-    }
 	}
 
 }
