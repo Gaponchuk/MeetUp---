@@ -3,6 +3,7 @@ body {
   font-family: $body-font;
   color: $body-color;
   margin: 0 auto;
+  min-width: 260px;
 }
 
 img {
@@ -11,10 +12,7 @@ img {
 }
 
 .btn {
-  text-decoration: none;
-  display: block;
-  border: none;
-  box-shadow: none;
+  @include btn;
 }
 
 .container {

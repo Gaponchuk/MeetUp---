@@ -1,12 +1,27 @@
 .header-content {
   padding-bottom: 140px;
   &__bg {
-    background-color: #574f4f;
-    padding-bottom: 250px;
+    background-color: #4a454b;
+    padding-bottom: 20%;
+    position: relative;
+    &::after {
+      content: '';
+      width: 80%;
+      height: 31%;
+      position: absolute;
+      bottom: 0;
+      left: 5%;
+      transform: rotate(2deg) translateY(8%);
+      background: url("../img/header-icons.png") no-repeat 0% 0;
+      background-size: contain;
+      @include mobile {
+        content: none;
+      }
+    }
 }
 
   &__angle {
     @include angles($direction-top: true, $angle-bg: $white);
-    margin-top: -100px;
+    margin-top: -20vh;
   }
 }

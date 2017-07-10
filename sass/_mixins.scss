@@ -13,7 +13,6 @@
   border-radius: 15px;
   padding-top: 17px;
   padding-bottom: 15px;
-//<<<<<<< HEAD
   color: #444;
 }
 
@@ -39,7 +38,8 @@
 @mixin container {
   box-sizing: border-box;
   margin: 0 auto;
-  max-width: 91%;
+  width: 91%;
+  max-width: 1170px;
     @include desktop {
       padding: 0 70px;
       outline: 1px dashed red;
@@ -50,12 +50,13 @@
     }
 
     @include mobile {
-      width: 100%;
+      width: auto;
+      padding: 0 10px;
       outline: 1px dashed black;
     }
 }
 
-@mixin angles($direction-top: false, $direction-btm: false, $angle-bg: $white) {
+@mixin angles($direction-top: false, $direction-btm: false, $angle-bg: $white, $z-index: false) {
   position: relative;
   &::after,
   &::before {
@@ -79,6 +80,12 @@
       transform-origin: bottom left;
     }
   }
+  @if $z-index {
+    &::after,
+    &::before {
+      z-index: $z-index;
+  }
+}
 }
 
 @mixin no-list {
@@ -86,4 +93,32 @@
   margin: 0;
   padding: 0;
 }
-//>>>>>>> 3d9fa63700b92fb02d6f89b4fc38223207dba001
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-ms-input-placeholder      { @content; }
+  &::-moz-placeholder { @content; }
+}
+
+@mixin btn {
+  text-decoration: none;
+  display: block;
+  border: none;
+  box-shadow: none;
+  color: inherit;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    box-shadow: inset 0 0 3px #000;
+  }
+}
+
+@mixin hidden {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}

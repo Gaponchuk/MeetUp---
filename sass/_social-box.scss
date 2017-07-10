@@ -1,0 +1,44 @@
+.social-box {
+display: flex;
+	&__link {
+	@include hidden;
+	text-decoration: none;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	@include tablet {
+		width: 20px;
+		height: 20px;
+	}
+	&:not(:last-child) {
+		margin-right: 10px;
+		@include tablet {
+			margin-right: 5px;
+		}
+	}
+	&:hover {
+		opacity: 0.8;
+	}
+	}
+
+	&__link--fb {
+	background: url("../img/facebook.svg") no-repeat 50% 50%;
+	background-size: contain;
+	}
+
+	&__link--tw {
+	background: url("../img/twitter.svg") no-repeat 50% 50%;
+	background-size: contain;
+	}
+
+	&__link--be {
+	background: url("../img/behance.svg") no-repeat 50% 50%;
+	background-size: contain;
+	}
+
+	&__link--db {
+	background: url("../img/dribbble.svg") no-repeat 50% 50%;
+	background-size: contain;
+	}
+
+}
