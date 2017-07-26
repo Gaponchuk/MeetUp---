@@ -1,0 +1,35 @@
+.events {
+margin-top: 150px;
+padding: 90px 0;
+display: flex;
+flex-direction: column;
+	&__title {
+    color: $body-color;
+    font-family: $body-font;
+    font-size: em(50);
+    font-weight: 900;
+    margin: 0 0 30px 100px;
+	}
+
+	&__text {
+    color: $body-color;
+    font-family: $body-font;
+    font-size: em(14);
+    font-weight: 300;
+    margin: 0 0 20px 100px;
+    max-width: 605px;
+	}
+
+	&__more {
+    border-radius: 15px;
+    background-color: #373737;
+    margin-top: auto;
+    align-self: center;
+    color: $white;
+    font-family: $body-font;
+    font-size: em(22);
+    font-weight: 400;
+    padding: 20px 48px;
+	}
+
+}
