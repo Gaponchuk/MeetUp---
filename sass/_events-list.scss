@@ -1,0 +1,33 @@
+
+.events-list {
+margin: 100px 0;
+display: flex;
+flex-wrap: wrap;
+	&__item {
+  flex-basis: 430px;
+  min-height: 416px;
+	}
+
+	&__item--event1 {
+  background-color: #3d6ed2;
+  flex-grow: 5;
+	}
+
+	&__item--event2 {
+  background-color: $signup-color;
+  flex-grow: 4;
+	}
+
+	&__item--event3 {
+  background-color: #ff9d00;
+  flex-grow: 1;
+  min-height: 368px;
+	}
+
+	&__item--event4 {
+  background-color: #e0652a;
+  flex-grow: 3.4;
+  min-height: 368px;
+	}
+
+}
